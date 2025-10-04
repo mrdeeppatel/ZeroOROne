@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Risk Visualization</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        .chart { margin-bottom: 50px; }
+        h1 { text-align:center; }
+    </style>
+</head>
+<body>
+    <h1>Student Dropout Risk Visualization</h1>
+
+    <div class="chart">
+        <h2>Bar Chart</h2>
+        {{ bar_plot|safe }}
+    </div>
+
+    <div class="chart">
+        <h2>Pie Chart</h2>
+        {{ pie_plot|safe }}
+    </div>
+
+    <div class="chart">
+        <h2>Attendance Distribution</h2>
+        {{ box_plot|safe }}
+    </div>
+</body>
+</html>
